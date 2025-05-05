@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 # Load data and convert to date
-rain_data = pd.read_csv('rain-data-processed.csv')
+rain_data = pd.read_csv('data-rain.csv')
 rain_data['Date'] = pd.to_datetime(rain_data['Date']).dt.date
 
 st.set_page_config(
